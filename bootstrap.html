@@ -5,9 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap-grid.css">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/core.js"></script>
   <title>bootstrap</title>
 </head>
 <body>
-  <h3 class="text-center text-primary">jQuery playground</h3>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/core.js">
+    $(document).ready(function(){
+      $("#target1").css("color","red");
+      $("#target1").prop("disabled","true");
+
+    });
+  </script>
+
+  <!--请把你的代码写在这条注释之上-->
+  <!--Only change code this above this line-->
+  <div class="container-fluid">
+    <h3 class="text-primary text-center">jQury Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <h4>#left-well</h4>
+        <div id="left-well" class="well">
+          <button id="target1" class="target btn btn-default">#target1</button>
+          <button id="target2" class="target btn btn-default">#target2</button>
+          <button id="target3" class="target btn btn-default">#target3</button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>#right-well</h4>
+        <div id="right-well" class="well">
+        <button id="target4" class="target btn btn-default">#target4</button>
+        <button id="target5" class="target btn btn-default">#target5</button>
+        <button id="target6" class="target btn btn-default">#target6</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
